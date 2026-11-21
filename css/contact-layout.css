@@ -1,0 +1,15 @@
+/* Projects first; contact and social links together at the bottom. */
+#portfolio.section{padding-top:36px;padding-bottom:36px}
+#portfolio .heading{width:100%;text-align:center}
+#portfolio .heading h2{font-size:1.8rem;margin:0 0 20px;letter-spacing:normal}
+#portfolio .novari-home-card{width:100%;margin:0}
+#contact.contactSection{padding:36px 24px 40px;background:#708090;color:#fff;letter-spacing:normal;font:1rem/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#contact .subHeading{margin:0 0 8px;font-size:1rem}
+#contact h2{font-size:1.8rem;margin:0 0 20px;line-height:1.35}
+#contact .contactButton{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin:0;padding:10px 24px;color:#fff;border:1px solid #fff;border-radius:5px;text-decoration:none;font-weight:600}
+#contact .contactButton:hover{color:#334854;background:#fff}
+#contact .contact-social-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:20px}
+#contact .contact-social-links a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:96px;padding:8px 16px;border:1px solid rgba(255,255,255,.65);border-radius:5px;color:#fff;text-decoration:none;font-size:.95rem}
+#contact .contact-social-links a:hover{background:rgba(255,255,255,.14)}
+#contact a:focus-visible{outline:3px solid #ffcf83;outline-offset:4px}
+@media(max-width:580px){#portfolio.section{padding-block:28px}#contact.contactSection{padding:28px 20px 32px}#contact .contact-social-links{gap:8px}#contact .contact-social-links a{min-width:88px;padding:8px 12px}}

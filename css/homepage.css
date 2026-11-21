@@ -1,0 +1,54 @@
+/* First homepage refinement: deliberately scoped to the introduction. */
+.portfolio-intro{background:#f4f8fa;color:#182b36;border-top:5px solid #075d6d;letter-spacing:normal;font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.portfolio-intro *{box-sizing:border-box}
+.portfolio-intro-inner{max-width:1050px;margin:0 auto;padding:72px 24px 64px}
+.portfolio-intro .portfolio-location{font-size:.95rem;font-weight:600;color:#075d6d;margin:0 0 20px}
+.portfolio-intro h1{font-size:clamp(2.8rem,6vw,4.7rem);font-weight:700;line-height:1.08;letter-spacing:-.045em;margin:0 0 24px}
+.portfolio-intro .portfolio-summary{font-size:clamp(1.3rem,2.4vw,1.7rem);line-height:1.45;max-width:730px;margin:0 0 20px}
+.portfolio-intro .portfolio-background,.portfolio-intro .portfolio-personal{font-size:1.05rem;color:#425d6c;max-width:790px;margin:0 0 16px}
+.portfolio-intro-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:30px}
+.portfolio-intro-actions a{min-height:48px;display:inline-flex;align-items:center;text-decoration:none;font-weight:600}
+.portfolio-intro-actions .portfolio-primary,.portfolio-intro-actions .portfolio-secondary{padding:10px 20px;border-radius:5px;border:1px solid #075d6d}
+.portfolio-intro-actions .portfolio-primary{background:#075d6d;color:white}
+.portfolio-intro-actions .portfolio-primary:hover{background:#043e49}
+.portfolio-intro-actions .portfolio-secondary,.portfolio-intro-actions .portfolio-text-link{color:#075d6d}
+.portfolio-intro-actions .portfolio-secondary:hover{background:#e3edf1}
+.portfolio-intro-actions .portfolio-text-link:hover{text-decoration:underline;text-underline-offset:4px}
+.portfolio-intro-actions a:focus-visible{outline:3px solid #d66c16;outline-offset:4px}
+@media(max-width:600px){.portfolio-intro-inner{padding:44px 20px 40px}.portfolio-intro-actions{gap:10px 16px}.portfolio-intro .portfolio-background,.portfolio-intro .portfolio-personal{font-size:1rem}}
+/* Compact introduction: less top space and a smaller name. */
+.portfolio-intro-inner{padding-top:28px;padding-bottom:36px}
+.portfolio-intro h1{font-size:clamp(2.2rem,4.5vw,3.3rem);margin-bottom:16px}
+.portfolio-intro .portfolio-location{margin-bottom:12px}
+.portfolio-intro .portfolio-summary{margin-bottom:14px}
+.portfolio-intro .portfolio-background,.portfolio-intro .portfolio-personal{margin-bottom:12px}
+.portfolio-intro-actions{margin-top:22px}
+@media(max-width:600px){.portfolio-intro-inner{padding-top:24px;padding-bottom:28px}}
+
+/* Matching introduction buttons */
+.portfolio-intro-actions .portfolio-text-link {
+    padding: 10px 20px;
+    border: 1px solid #075d6d;
+    border-radius: 5px;
+    color: #075d6d;
+}
+
+.portfolio-intro-actions a,
+.portfolio-intro-actions a:hover,
+.portfolio-intro-actions a:focus,
+.portfolio-intro-actions a:active,
+.portfolio-intro-actions a:visited {
+    text-decoration: none;
+}
+
+.portfolio-intro-actions .portfolio-text-link:hover {
+    background: #e3edf1;
+}
+/* Fix introduction button underline priority */
+#about .portfolio-intro-actions a,
+#about .portfolio-intro-actions a:hover,
+#about .portfolio-intro-actions a:focus,
+#about .portfolio-intro-actions a:active,
+#about .portfolio-intro-actions a:visited {
+    text-decoration: none;
+}

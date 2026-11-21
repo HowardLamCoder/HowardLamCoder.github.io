@@ -1,0 +1,60 @@
+/* Navigation below the slideshow; one introduction with a portrait. */
+#navigation.portfolio-navigation{position:sticky;top:0;z-index:1000;background:#708090;color:#fff;padding:12px 24px;letter-spacing:normal;font:1rem/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.portfolio-navigation-inner{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+#navigation.portfolio-navigation .portfolio-brand{color:#fff;font-size:1.1rem;font-weight:600;text-decoration:none;padding:8px 0}
+#navigation.portfolio-navigation ul{display:flex;flex-wrap:wrap;gap:8px 24px;list-style:none;margin:0;padding:0}
+#navigation.portfolio-navigation li a{display:inline-flex;align-items:center;min-height:44px;color:#fff;text-decoration:none;font-size:.95rem;padding:6px 0}
+#navigation.portfolio-navigation a:hover{text-decoration:underline;text-underline-offset:5px}
+#navigation.portfolio-navigation a:focus-visible{outline:3px solid #ffcf83;outline-offset:4px}
+.portfolio-intro{border-top:0;scroll-margin-top:88px}
+.portfolio-intro-inner.portfolio-profile{display:grid;grid-template-columns:250px minmax(0,1fr);gap:40px;align-items:center;padding-top:32px;padding-bottom:36px}
+.portfolio-profile-photo{display:block;width:100%;height:auto;border-radius:6px}
+.portfolio-profile-text{min-width:0}
+.portfolio-profile-text .portfolio-summary{font-size:clamp(1.2rem,2vw,1.5rem)}
+.portfolio-profile-text .portfolio-background,.portfolio-profile-text .portfolio-personal{font-size:1rem}
+#skills,#portfolio,#contact{scroll-margin-top:88px}
+@media(max-width:760px){.portfolio-intro-inner.portfolio-profile{grid-template-columns:180px minmax(0,1fr);gap:24px;align-items:start}.portfolio-navigation-inner{gap:12px}.portfolio-navigation-inner ul{gap:6px 16px}}
+@media(max-width:580px){#navigation.portfolio-navigation{padding:8px 20px}.portfolio-navigation-inner{flex-direction:column;align-items:flex-start;gap:0}#navigation.portfolio-navigation ul{width:100%;justify-content:space-between;gap:8px}.portfolio-intro-inner.portfolio-profile{grid-template-columns:1fr;gap:22px;padding-top:24px}.portfolio-profile-photo{max-width:210px;margin-inline:auto}.portfolio-intro,#skills,#portfolio,#contact{scroll-margin-top:125px}}
+
+/* Profile alignment refinement */
+#navigation.portfolio-navigation {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.portfolio-navigation-inner {
+    width: 100%;
+    max-width: 1050px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.portfolio-intro {
+    background: transparent;
+}
+
+.portfolio-intro-inner.portfolio-profile {
+    align-items: start;
+}
+
+.portfolio-profile-photo {
+    margin: 0;
+}
+
+.portfolio-profile-text {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .portfolio-navigation-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 580px) {
+    .portfolio-profile-photo {
+        margin-inline: auto;
+    }
+}

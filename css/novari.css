@@ -1,0 +1,156 @@
+/* Scoped project styles: the existing homepage keeps its current design. */
+.novari-page{margin:0;background:#f6f8fa;color:#182b36;font:1rem/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.novari-page *, .novari-home-card *{box-sizing:border-box}
+.novari-page .wrap{width:min(1120px,calc(100% - 3rem));margin-inline:auto}
+.novari-page a{color:#075d6d;text-underline-offset:5px}
+.novari-page a:focus-visible,.novari-home-card a:focus-visible{outline:3px solid #d66c16;outline-offset:5px}
+.novari-page .project-header{display:flex;justify-content:space-between;align-items:center;padding-block:1.5rem;border-bottom:1px solid #d6e0e5;gap:1.5rem}
+.novari-page .wordmark{text-decoration:none;color:#182b36;font-size:1.1rem;font-weight:700;line-height:1.4}
+.novari-page .wordmark span{display:block;font-size:.875rem;font-weight:400;color:#526775}
+.novari-page nav{display:flex;gap:1.5rem}
+.novari-page nav a{font-size:.95rem;text-decoration:none}
+.novari-page .project-intro{padding-top:4.5rem;padding-bottom:2.8rem}
+.novari-page .eyebrow{font-size:.875rem;letter-spacing:.06em;font-weight:650;color:#146474;margin:0 0 1rem}
+.novari-page h1{font-size:clamp(4rem,10vw,7.5rem);line-height:1;letter-spacing:-.06em;margin:0 0 1.5rem;font-weight:700}
+.novari-page .lead{font-size:clamp(1.4rem,3vw,2rem);line-height:1.35;letter-spacing:-.025em;margin:0 0 1rem}
+.novari-page .intro-copy{max-width:44rem;color:#425d6c;font-size:1.1rem}
+.novari-page .project-facts{display:grid;grid-template-columns:1fr .8fr 1.4fr;gap:1.5rem;border-top:1px solid #d6e0e5;padding-top:1.3rem;margin:2rem 0}
+.novari-page dt{font-size:.875rem;color:#526775;margin-bottom:.3rem}
+.novari-page dd{margin:0;font-weight:550}
+.novari-page .project-button,.novari-home-card .novari-card-link{display:inline-block;background:#075d6d;color:#fff;padding:.8rem 1.2rem;border-radius:5px;font-weight:600;text-decoration:none;line-height:1.5}
+.novari-page .project-button:hover,.novari-home-card .novari-card-link:hover{background:#043e49;color:#fff}
+.novari-page .game-capture{margin-block:0}
+.novari-page .game-capture img{display:block;width:100%;height:auto;border-radius:8px;background:#172021;border:1px solid #d6e0e5}
+.novari-page figcaption{font-size:.875rem;color:#526775;padding-top:.65rem}
+.novari-page .project-section{padding-block:4.5rem;border-bottom:1px solid #d6e0e5;scroll-margin-top:2rem}
+.novari-page .split{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem}
+.novari-page h2{font-size:clamp(1.6rem,3vw,2.25rem);line-height:1.25;letter-spacing:-.035em;margin:0;max-width:27rem}
+.novari-page .section-copy p:first-child{margin-top:0}
+.novari-page .section-copy{color:#425d6c;font-size:1.05rem}
+.novari-page .section-heading{margin-bottom:2rem}
+.novari-page .feature-list article{display:grid;grid-template-columns:12rem 1fr;gap:2rem;border-top:1px solid #d6e0e5;padding:1.6rem 0}
+.novari-page .feature-kind{font-size:.9rem;color:#146474;padding-top:.2rem;font-weight:600}
+.novari-page h3{font-size:1.2rem;line-height:1.4;margin:0 0 .5rem}
+.novari-page .feature-list p{color:#425d6c;margin:0;max-width:44rem}
+.novari-page .engineering-band{background:#e8f0f3}
+.novari-page .engineering-band .project-section{border:0}
+.novari-page .technology-list{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;list-style:none;padding:0;margin:1.5rem 0 0;font-size:.9rem;font-weight:600;color:#075d6d}
+.novari-page .project-footer{display:flex;justify-content:space-between;gap:1rem;padding-block:1.7rem;font-size:.9rem;color:#526775}
+.novari-page .project-footer p{margin:0}
+.novari-page .skip-link{position:absolute;left:1rem;top:-5rem;background:white;padding:.8rem;z-index:5}
+.novari-page .skip-link:focus{top:1rem}
+.novari-home-card{display:grid;grid-template-columns:1fr 1.1fr;gap:2rem;align-items:center;margin:2rem 0;padding:1.8rem;background:#f1f6f8;color:#182b36;border:1px solid #d6e0e5;border-radius:8px;letter-spacing:normal;font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.novari-home-card img{display:block;width:100%;height:auto;border-radius:4px}
+.novari-home-card h3{font-size:1.75rem;margin:.4rem 0 .7rem}
+.novari-home-card .novari-card-status{font-size:.875rem;color:#146474;margin:0}
+.novari-home-card p{margin:0 0 1rem}
+@media(max-width:720px){.novari-page .wrap{width:calc(100% - 2rem)}.novari-page .project-intro{padding-top:3rem}.novari-page .project-facts,.novari-page .split{grid-template-columns:1fr;gap:1.5rem}.novari-page .project-facts{gap:1rem}.novari-page .project-section{padding-block:3rem}.novari-page .feature-list article{grid-template-columns:1fr;gap:.5rem}.novari-page .project-footer{flex-direction:column}.novari-home-card{grid-template-columns:1fr;padding:1.2rem}.novari-page .project-header{gap:.8rem}.novari-page nav{gap:1rem}}
+/* Manual screenshot gallery; images keep their full composition. */
+.novari-page .screenshot-gallery{outline-offset:6px}
+.novari-page .gallery-slide{margin:0}
+.novari-page .gallery-slide[hidden],.novari-page .gallery-controls[hidden],.novari-page .gallery-choices[hidden]{display:none}
+.novari-page .gallery-stage{aspect-ratio:16 / 10}
+.novari-page .gallery-slide img{aspect-ratio:16 / 9;object-fit:contain;background:#172021}
+.novari-page .gallery-slide figcaption{min-height:3.5em}
+.novari-page .gallery-controls{display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:center;margin-top:.75rem}
+.novari-page .gallery-button,.novari-page .gallery-choices button{font:inherit;cursor:pointer;border:1px solid #b3c6cf;border-radius:5px;min-height:48px;padding:.6rem 1rem;color:#075d6d;background:#fff}
+.novari-page .gallery-button:hover,.novari-page .gallery-choices button:hover{background:#e8f0f3}
+.novari-page .gallery-button:focus-visible,.novari-page .gallery-choices button:focus-visible{outline:3px solid #d66c16;outline-offset:3px}
+.novari-page .gallery-status{text-align:center;font-size:.9rem;color:#425d6c;margin:0}
+.novari-page .gallery-choices{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.novari-page .gallery-choices button{font-size:.875rem}
+.novari-page .gallery-choices button[aria-pressed="true"]{background:#075d6d;border-color:#075d6d;color:white}
+@media(max-width:540px){.novari-page .gallery-stage{aspect-ratio:auto}.novari-page .gallery-controls{gap:.5rem}.novari-page .gallery-status{font-size:.875rem}.novari-page .gallery-button{padding:.6rem .75rem}.novari-page .gallery-slide figcaption{min-height:5.5em}}
+
+/* Novari background and spacing refinement */
+body.novari-page {
+    background-color: #fff;
+    background-image: url('../img/background_image3.png');
+    background-size: 100%;
+}
+
+.novari-page .project-header {
+    padding-block: 1rem;
+}
+
+.novari-page .project-intro {
+    padding-top: 1.75rem;
+    padding-bottom: 1.5rem;
+}
+
+.novari-page h1 {
+    font-size: clamp(2.75rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+    letter-spacing: -.04em;
+}
+
+.novari-page .eyebrow {
+    margin-bottom: .65rem;
+}
+
+.novari-page .lead {
+    font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+    margin-bottom: .75rem;
+}
+
+.novari-page .project-facts {
+    margin-block: 1.25rem;
+    padding-top: 1rem;
+}
+
+.novari-page .project-section {
+    padding-block: 2.5rem;
+}
+
+@media (max-width: 720px) {
+    .novari-page .project-intro {
+        padding-top: 1.25rem;
+    }
+
+    .novari-page .project-section {
+        padding-block: 2rem;
+    }
+}
+/* Inset project media */
+.novari-page video {
+    display: block;
+    max-width: min(960px, 90%);
+    margin-inline: auto;
+}
+
+.novari-page .screenshot-gallery.wrap {
+    width: min(960px, calc(100% - 3rem));
+    margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+    .novari-page video {
+        max-width: 100%;
+    }
+
+    .novari-page .screenshot-gallery.wrap {
+        width: calc(100% - 2rem);
+    }
+}
+/* Compact Novari section spacing */
+.novari-page .project-section {
+    padding-block: 1.5rem;
+}
+
+.novari-page .section-heading {
+    margin-bottom: 1rem;
+}
+
+.novari-page .feature-list article {
+    padding-block: 1rem;
+}
+
+.novari-page .section-copy p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+    .novari-page .project-section {
+        padding-block: 1.25rem;
+    }
+}

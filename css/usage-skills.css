@@ -1,0 +1,19 @@
+/* Usage estimates, not proficiency ratings. Five columns/two rows on desktop. */
+#skills.usage-skills{padding:32px 0 36px;background:#708090;color:#fff;letter-spacing:normal;font:1rem/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.usage-skills *{box-sizing:border-box}
+.usage-skills-inner{max-width:1050px;margin-inline:auto;padding-inline:24px;text-align:center}
+.usage-skills h2{font-size:1.8rem;line-height:1.3;font-weight:600;margin:0 0 8px}
+.usage-skills .usage-skills-explanation{font-size:.95rem;line-height:1.5;max-width:720px;margin:0 auto 24px;color:#fff}
+.usage-skills-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px 20px}
+.usage-skill{min-width:0;text-align:center}
+.usage-ring{width:132px;height:132px;max-width:100%;margin:0 auto 10px;position:relative}
+.usage-ring svg{display:block;width:100%;height:100%;overflow:visible;transform:rotate(-90deg)}
+.usage-ring circle{fill:none;stroke-width:4}
+.usage-ring-track{stroke:rgba(255,255,255,.2)}
+.usage-ring-progress{stroke:#fff;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:calc(100 - var(--usage));}
+.usage-ring .usage-percent{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:1.8rem;font-weight:400;color:#fff;line-height:1}
+.usage-skill h3{font-size:1rem;font-weight:600;line-height:1.4;min-height:2.8em;margin:0 0 4px;display:flex;align-items:center;justify-content:center}
+.usage-skill p{font-size:.875rem;line-height:1.4;max-width:180px;margin:0 auto;color:#fff}
+@media(max-width:850px){.usage-skills-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:580px){#skills.usage-skills{padding:26px 0 30px}.usage-skills-inner{padding-inline:20px}.usage-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.usage-ring{width:116px;height:116px}.usage-ring .usage-percent{font-size:1.6rem}}
+@media(max-width:330px){.usage-skills-grid{gap:24px 10px}.usage-ring{width:104px;height:104px}}

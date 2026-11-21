@@ -1,0 +1,20 @@
+/* Social links on the existing textured page background, separate from email contact. */
+.profile-links-section{background:transparent;padding:28px 24px 32px;text-align:center}
+.profile-links-section .profile-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin:0 auto;max-width:1050px}
+.profile-links-section .profile-links a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:100px;padding:8px 18px;border:1px solid #526775;border-radius:4px;background:#708090;color:#fff;font:400 .95rem/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;letter-spacing:normal;text-decoration:none}
+.profile-links-section .profile-links a:hover{background:#526775}
+.profile-links-section .profile-links a:focus-visible{outline:3px solid #075d6d;outline-offset:4px}
+@media(max-width:580px){.profile-links-section{padding:24px 20px}.profile-links-section .profile-links{gap:8px}.profile-links-section .profile-links a{min-width:88px;padding:8px 12px}}
+
+/* More social section spacing */
+.profile-links-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media (max-width: 580px) {
+    .profile-links-section {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+}

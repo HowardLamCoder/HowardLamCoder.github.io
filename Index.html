@@ -1,292 +1,274 @@
 	<!DOCTYPE html>
-	<html>
+	<html lang="en">
 	<head>
-		<title>Howard's Portfolio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Howard Lam | Software Developer</title>
+        <meta name="description" content="Howard Lam, a software developer in Melbourne working with C#, ASP.NET and SQL Server. Explore my experience and Novari city-building project.">
 
-	    
+
 		<link rel="stylesheet" text="text/css" href="css/superslides.css">
 		<link rel="stylesheet" text="text/css" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	     
+
 	    <link rel="stylesheet" text="text/css" href="css/style.css">
         <style>
             .container{
                 max-width:1050px;
             }
         </style>
-	</head>
+	    <link rel="stylesheet" href="css/novari.css">
+        <link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="css/homepage-slideshow.css">
+<script src="js/homepage-slideshow.js" defer></script>
+<link rel="stylesheet" href="css/homepage-layout.css">
+<link rel="stylesheet" href="css/usage-skills.css">
+<script src="js/usage-skills.js" defer></script>
+<link rel="stylesheet" href="css/contact-layout.css">
+<link rel="stylesheet" href="css/contact-social-outside.css">
+<link rel="stylesheet" href="css/portfolio-summary.css">
+</head>
 
-	<body>
-        
+	<body id="page-top">
+
 
         <div class="loader">
             <div class="inner"></div>
         </div>
 
-        <div id="slides">
-
-            <div class="overlay"></div>
-            <div class="slides-container">
-                <img src="img/Slide4.jpeg" alt="">
-                <img src="img/Slide5.jpeg" alt="">
-                <img src="img/Slide6.jpeg" alt="">
-            </div>
-
-            <div class="TitleMessage">
-                <div class="Heading">
-                    <p class="main">Howard Lam</p>
-                    <p class="sub typed"></p>
-
-                </div>
-
-
-            </div>
-
-            <nav class="slides-navigation">
-                <a href="#" class="next"></a>
-                <a href="#" class="prev"></a>
-            </nav>
-        </div>
-
-
-        <nav id="navigation" class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Howard Lam</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#stats">Stats</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-
-        </nav>
-
-
-
-        <div id="about" class="section">
-            <div class="container">
-
-
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <div style="margin:0">
-                            <img class="aboutimage" src="img/MyPhoto.jpg">
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-7" style="font-size:18px; text-align:justify;">
-					    <p>Hi, I’m Howard Lam, a Software Developer based in Melbourne, Australia. I have over seven years of experience at eStar, working mainly on the David Jones eCommerce platform.</p>
-					    <p>I work with C#, ASP.NET, SQL Server and JavaScript to develop features, integrate external services and resolve issues across payments, orders, delivery and product information.</p>
-					    <p>I enjoy solving problems, understanding how things work and working with others to turn ideas into practical solutions.</p>
-					</div>
+        <section class="portfolio-banner" aria-label="Homepage photo slideshow">
+    <img class="portfolio-banner-photo is-current" src="img/Slide4.jpeg" alt="" aria-hidden="true" fetchpriority="high">
+    <img class="portfolio-banner-photo" src="img/Slide5.jpeg" alt="" aria-hidden="true">
+    <img class="portfolio-banner-photo" src="img/Slide6.jpeg" alt="" aria-hidden="true">
+        <div class="portfolio-banner-copy">
+    <p class="portfolio-banner-name">Howard Lam</p>
+    <p class="portfolio-banner-role" aria-label="Software Developer, .NET Developer and Game Developer">
+        <span data-role-text aria-hidden="true">Software Developer.</span>
+    </p>
+</div>
+<div class="portfolio-banner-controls" hidden>
+        <button type="button" data-banner-previous aria-label="Previous slideshow photo">Previous</button>
+        <button type="button" data-banner-toggle>Pause slideshow</button>
+        <button type="button" data-banner-next aria-label="Next slideshow photo">Next</button>
+    </div>
+</section>
+<nav id="navigation" class="portfolio-navigation" aria-label="Main navigation">
+    <div class="portfolio-navigation-inner">
+        <a class="portfolio-brand" href="#page-top">Howard Lam</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<header id="about" class="portfolio-intro">
+            <div class="portfolio-intro-inner portfolio-profile"><img class="portfolio-profile-photo" src="img/MyPhoto.jpg" alt="Howard Lam"><div class="portfolio-profile-text">
+                <p class="portfolio-location">Software Developer · Melbourne, Australia</p>
+                <h1>Howard Lam</h1>
+                <p class="portfolio-summary">I build web applications and backend services with C#, ASP.NET and SQL Server.</p>
+                <p class="portfolio-background">I have over seven years of experience at eStar, working mainly on the David Jones eCommerce platform. My work has covered features, external integrations and investigating issues across payments, orders and product information.</p>
+                <p class="portfolio-personal">Outside that work, I’m developing Novari, a mobile city-building game with a Unity client and an ASP.NET Core backend.</p>
+                <div class="portfolio-intro-actions">
+                    <a class="portfolio-primary" href="Novari.html">Explore Novari</a>
+                    <a class="portfolio-secondary" href="documents/Howard_Lam_CV.pdf" target="_blank" rel="noopener" aria-label="View CV PDF in a new tab">View CV</a>
+                    <a class="portfolio-text-link" href="https://www.linkedin.com/in/howard-lam-77806a16b/">LinkedIn</a>
+                    <a class="portfolio-text-link" href="https://github.com/HowardLamCoder">GitHub</a>
                 </div>
             </div>
-        </div>
-
-        <div id="skills" class="skillsSection section">
-            <div class="container">
+        </div></header>
 
 
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>Technical Skills</h2>
-                        <p>A Representation of my proficiency in each skills</p>
-                    </div>
-
-                    <div class="owl-carousel owl-theme">
-                        <div class="skill">
-                            <span class="chart" data-percent="60">
-                                <span class="percent">60</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>ADO.NET</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
-
-                        <div class="skill">
-                            <span class="chart" data-percent="80">
-                                <span class="percent">80</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>HTML</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
-
-                        <div class="skill">
-                            <span class="chart" data-percent="80">
-                                <span class="percent">90</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>CSS</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
 
 
-                        <div class="skill">
-                            <span class="chart" data-percent="70">
-                                <span class="percent">80</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>MVC</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
 
-
-                        <div class="skill">
-                            <span class="chart" data-percent="75">
-                                <span class="percent">80</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>My SQL</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
-
-
-                        <div class="skill">
-                            <span class="chart" data-percent="80">
-                                <span class="percent">70</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>jQuery</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
-
-
-                        <div class="skill">
-                            <span class="chart" data-percent="80">
-                                <span class="percent">70</span>
-                                <canvas height="152" width="152"></canvas>
-                            </span>
-                            <h6>Java Script</h6>
-                            <p>Used in most of my web development Project</p>
-                        </div>
-                    </div>
+        <section id="skills" class="skillsSection usage-skills" aria-labelledby="skills-heading">
+    <div class="usage-skills-inner">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <p class="usage-skills-explanation">Estimated frequency of use across work and personal projects. Each skill is rated independently.</p>
+        <div class="usage-skills-grid">
+            <article class="usage-skill" data-usage="95" style="--usage: 95">
+                <div class="usage-ring" role="img" aria-label="95% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">95%</span>
                 </div>
-            </div>
-        </div>
-
-
-        <div id="stats" class="statsSection section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fa fa-calendar-times"></i>
-                                </div>
-                                <div class="sqaureContent">
-                                    <h2 class="counter"></h2>
-                                    <h3>Experience</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-3 col-sm-3">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fa fa-briefcase"></i>
-                                </div>
-                                <div class="sqaureContent">
-                                    <h2 class="counter"></h2>
-                                    <h3>Clients</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-3">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fa fa-calendar-times"></i>
-                                </div>
-                                <div class="sqaureContent">
-                                    <h2 class="counter"></h2>
-                                    <h3>Clients</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-3 col-sm-3">
-                        <div class="squareItem">
-                            <div class="squareInnerContainer">
-                                <div class="squareIcon">
-                                    <i class="fa fa-calendar-times"></i>
-                                </div>
-                                <div class="sqaureContent">
-                                    <h2 class="counter"></h2>
-                                    <h3>Clients</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <h3>C#</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="90" style="--usage: 90">
+                <div class="usage-ring" role="img" aria-label="90% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">90%</span>
                 </div>
-            </div>
+                <h3>ASP.NET / MVC</h3>
+                <p>Professional experience</p>
+            </article>
+            <article class="usage-skill" data-usage="90" style="--usage: 90">
+                <div class="usage-ring" role="img" aria-label="90% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">90%</span>
+                </div>
+                <h3>SQL Server / T-SQL</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="85" style="--usage: 85">
+                <div class="usage-ring" role="img" aria-label="85% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">85%</span>
+                </div>
+                <h3>REST / SOAP APIs</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="80" style="--usage: 80">
+                <div class="usage-ring" role="img" aria-label="80% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">80%</span>
+                </div>
+                <h3>JavaScript / jQuery</h3>
+                <p>Professional experience</p>
+            </article>
+            <article class="usage-skill" data-usage="75" style="--usage: 75">
+                <div class="usage-ring" role="img" aria-label="75% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">75%</span>
+                </div>
+                <h3>HTML / CSS</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="90" style="--usage: 90">
+                <div class="usage-ring" role="img" aria-label="90% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">90%</span>
+                </div>
+                <h3>Git / SVN</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="80" style="--usage: 80">
+                <div class="usage-ring" role="img" aria-label="80% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">80%</span>
+                </div>
+                <h3>ASP.NET Core / .NET 8</h3>
+                <p>Personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="80" style="--usage: 80">
+                <div class="usage-ring" role="img" aria-label="80% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">80%</span>
+                </div>
+                <h3>Entity Framework / EF Core</h3>
+                <p>Work and personal projects</p>
+            </article>
+            <article class="usage-skill" data-usage="85" style="--usage: 85">
+                <div class="usage-ring" role="img" aria-label="85% estimated frequency of use">
+                    <svg viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                        <circle class="usage-ring-track" cx="70" cy="70" r="61" />
+                        <circle class="usage-ring-progress" cx="70" cy="70" r="61" pathLength="100" />
+                    </svg>
+                    <span class="usage-percent" aria-hidden="true">85%</span>
+                </div>
+                <h3>Unity / C#</h3>
+                <p>Personal projects</p>
+            </article>
         </div>
+    </div>
+</section>
+
+<section id="stats" class="portfolio-summary-section" aria-label="Experience at a glance">
+    <div class="portfolio-summary-grid">
+        <article class="portfolio-summary-tile">
+            <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+            <h2>7+ years</h2>
+            <p>Professional experience</p>
+        </article>
+        <article class="portfolio-summary-tile">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <h2>eCommerce</h2>
+            <p>David Jones platform</p>
+        </article>
+        <article class="portfolio-summary-tile">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <h2>Backend</h2>
+            <p>C#, .NET and SQL Server</p>
+        </article>
+        <article class="portfolio-summary-tile">
+            <i class="fas fa-gamepad" aria-hidden="true"></i>
+            <h2>Personal projects</h2>
+            <p>Games and web APIs</p>
+        </article>
+    </div>
+</section>
 
 
-        <div id="contact" class="contactSection section">
-            <div class="col-md-12 text-center">
-                <p class="subHeading">Like What You See?</p>
-                <h2>I'd Love to hear from you</h2>
-                <a href="mailTo:HowardLam.Developer@gmail.com" class="contactButton">Get In Touch</a>
-            </div>
-        </div>
 
-        <div id="about" class="section">
+
+        <div id="portfolio" class="section">
             <div class="container">
                 <div class="row">
                     <div class="heading">
-                        <h2>PORTFOLIO</h2>
+                        <h2>Projects</h2>
                     </div>
+                    <article class="novari-home-card">
+                        <img src="img/novari/CitizenCity.PNG" alt="Novari neighbourhood and building catalogue shown in the Unity Editor" width="1293" height="721" loading="lazy">
+                        <div>
+                            <p class="novari-card-status">Personal project · In development</p>
+                            <h3>Novari</h3>
+                            <p>A mobile city-building game I’m developing with Unity and C#, alongside an ASP.NET Core and SQL Server backend.</p>
+                            <a class="novari-card-link" href="Novari.html">View the Novari project</a>
+                        </div>
+                    </article>
 
-                    <div class="filter">
-                        <ul id="filter">
-                            <li><a href="https://github.com/HowardLamCoder" data-filter="*">Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/howard-lam-77806a16b/" data-filter=".apps">LinkedIn</a></li>
-                            <li><a href="https://www.facebook.com/hoa.meomeo.3" data-filter=".me">Facebook</a></li>
 
-                            <!--<li><a href="#" data-filter="*" class="current">ALL</a></li>
-                            <li><a href="#" data-filter=".apps">Apps</a></li>
-                            <li><a href="#" data-filter=".me">Me</a></li>
-                            <li><a href="#" data-filter=".websites">Websites</a></li>-->
-                        </ul>
-
-                    </div>
 
 
                 </div>
             </div>
         </div>
+
+        <div id="contact" class="contactSection section">
+    <div class="col-md-12 text-center">
+        <p class="subHeading">Like what you see?</p>
+        <h2>I&#39;d love to hear from you</h2>
+        <a class="contactButton" href="mailto:howardlam.developer@gmail.com" aria-label="Email Howard Lam">Get in touch</a>
+    </div>
+</div>
+<section class="profile-links-section" aria-label="Social profiles">
+    <div class="profile-links">
+    <a href="documents/Howard_Lam_CV.pdf" target="_blank" rel="noopener" aria-label="View CV PDF in a new tab">View CV</a>
+    <a href="https://www.linkedin.com/in/howard-lam-77806a16b/">LinkedIn</a>
+    <a href="https://github.com/HowardLamCoder">GitHub</a>
+</div>
+</section>
 
         <!--<div id="portfolio" class="itemscontainer">
             <ul class="items">
@@ -300,7 +282,7 @@
 
         <div class="copyrightSection">
             <div class="col-md-12 text-center">
-                <p>&copy; Copyright Howard Lam 2018</p>
+                <p>&copy; Copyright Howard Lam 2018&ndash;2026</p>
             </div>
         </div>
 
@@ -311,12 +293,12 @@
 		<script src="js/countUp-jquery.js"></script>
 		<script src="js/countUp.js"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 	    <script src="js/jquery.superslides.js"></script>
-	    
 
-	    
+
+
 	</body>
 
 	</html>

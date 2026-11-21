@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Novari | Howard Lam</title>
+  <meta name="description" content="Novari, a mobile city-building game by Howard Lam. A look at the Unity client, ASP.NET Core backend and development work.">
+  <link rel="stylesheet" href="css/novari.css">
+  <script src="js/novari-gallery.js" defer></script>
+</head>
+<body class="novari-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="project-header wrap">
+    <a class="wordmark" href="Index.html">Howard Lam<span>Software Developer</span></a>
+    <nav aria-label="Project navigation"><a href="Index.html#portfolio">Portfolio</a><a href="mailto:HowardLam.Developer@gmail.com">Contact</a></nav>
+  </header>
+  <main id="main">
+      <section class="project-intro wrap" aria-labelledby="project-title">
+          <p class="eyebrow">Personal project · In development</p>
+          <h1 id="project-title">Novari</h1>
+          <p class="lead">A city-building game, built one system at a time.</p>
+          <p class="intro-copy">I’m developing Novari for mobile using Unity and C#. Alongside the game, I’m building an ASP.NET Core backend for features including trading and weekly event rewards.</p>
+          <dl class="project-facts"><div><dt>My work</dt><dd>Game client and backend development</dd></div><div><dt>Platform</dt><dd>Android · Private testing</dd></div><div><dt>Built with</dt><dd>Unity · C# · ASP.NET Core · SQL Server</dd></div></dl>
+          <a class="project-button" href="#development">Explore the development work</a>
+      </section>
+      <section class="wrap" aria-labelledby="gameplay-title"
+               style="margin-bottom: 40px;">
+          <h2 id="gameplay-title">See Novari in action</h2>
+          <p>A short development recording showing the city and game menus.</p>
+
+          <video controls playsinline preload="none"
+                 poster="img/novari/CitizenCity.PNG"
+                 style="display: block; width: 100%; height: auto;
+                border-radius: 8px; background: #172021;">
+              <source src="video/Novari-Gameplay.mp4" type="video/mp4">
+              Your browser does not support this video.
+              <a href="video/Novari-Gameplay.mp4">Open the gameplay video</a>.
+          </video>
+      </section>
+      <section class="game-capture screenshot-gallery wrap" aria-label="Novari screenshots" aria-roledescription="carousel" tabindex="0">
+          <div class="gallery-stage">
+              <figure class="gallery-slide" data-slide aria-label="1 of 5" aria-roledescription="slide">
+                  <img src="img/novari/CitizenCity.PNG" alt="A neighbourhood in Novari, with roads, residential buildings and the building catalogue." width="1293" height="721" fetchpriority="high" draggable="false">
+                  <figcaption><strong>City and building catalogue</strong> · Development capture in Unity. Artwork and interface are still being refined.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-slide aria-label="2 of 5" aria-roledescription="slide" hidden>
+                  <img src="img/novari/Shop.PNG" alt="The Global Market showing item and energy listings." width="1295" height="730" loading="lazy" draggable="false">
+                  <figcaption><strong>Global Market</strong> · Development capture in Unity. Artwork and interface are still being refined.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-slide aria-label="3 of 5" aria-roledescription="slide" hidden>
+                  <img src="img/novari/Tasks.PNG" alt="The weekly Event Track showing reward stages and claim buttons." width="1301" height="735" loading="lazy" draggable="false">
+                  <figcaption><strong>Event Track rewards</strong> · Development capture in Unity. Artwork and interface are still being refined.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-slide aria-label="4 of 5" aria-roledescription="slide" hidden>
+                  <img src="img/novari/LogIn.PNG" alt="The welcome screen with guest and email sign-in options." width="1301" height="688" loading="lazy" draggable="false">
+                  <figcaption><strong>Welcome screen</strong> · Development capture in Unity. Artwork and interface are still being refined.</figcaption>
+              </figure>
+              <figure class="gallery-slide" data-slide aria-label="5 of 5" aria-roledescription="slide" hidden>
+                  <img src="img/novari/LogIn1.PNG" alt="The email sign-in screen in Novari." width="1303" height="727" loading="lazy" draggable="false">
+                  <figcaption><strong>Email sign-in</strong> · Development capture in Unity. Artwork and interface are still being refined.</figcaption>
+              </figure>
+          </div>
+          <div class="gallery-controls" data-gallery-controls hidden>
+              <button type="button" class="gallery-button" data-previous aria-label="Previous screenshot">Previous</button>
+              <p class="gallery-status" data-gallery-status role="status" aria-live="polite" aria-atomic="true">1 of 5 · City and building catalogue</p>
+              <button type="button" class="gallery-button" data-next aria-label="Next screenshot">Next</button>
+          </div>
+          <div class="gallery-choices" data-gallery-choices aria-label="Choose a screenshot" hidden>
+              <button type="button" data-slide-index="0" aria-pressed="true">City and building catalogue</button>
+              <button type="button" data-slide-index="1" aria-pressed="false">Global Market</button>
+              <button type="button" data-slide-index="2" aria-pressed="false">Event Track rewards</button>
+              <button type="button" data-slide-index="3" aria-pressed="false">Welcome screen</button>
+              <button type="button" data-slide-index="4" aria-pressed="false">Email sign-in</button>
+          </div>
+      </section>
+      <section id="development" class="project-section wrap split">
+          <div><p class="eyebrow">The game</p><h2>Building the city, and the systems behind it.</h2></div>
+          <div class="section-copy"><p>Novari gives me a way to work on both an interactive game client and the services behind it. I’ve been developing the placement tools, city menus and camera controls, as well as backend features that store and validate player actions.</p><p>The game is still in development. Android builds are being distributed through Google Play internal testing while I check the controls and layouts on a real phone.</p></div>
+      </section>
+      <section class="project-section wrap" aria-labelledby="features-title">
+          <div class="section-heading"><p class="eyebrow">Current work</p><h2 id="features-title">What I’ve been building</h2></div>
+          <div class="feature-list">
+              <article><span class="feature-kind">Game client</span><div><h3>City placement and controls</h3><p>Building and road placement, preview controls, a building catalogue, and touch controls for moving and zooming the camera.</p></div></article>
+              <article><span class="feature-kind">Trading</span><div><h3>Global Market and Trade Depot</h3><p>A market for browsing listings and visiting a seller’s depot. Backend work includes inventory checks, listing creation and protection against conflicting updates.</p></div></article>
+              <article><span class="feature-kind">Progression</span><div><h3>Weekly Event Track</h3><p>Tasks, event points and staged rewards, with backend validation for progress and reward claims.</p></div></article>
+              <article><span class="feature-kind">Interface</span><div><h3>Making the game usable on a phone</h3><p>Responsive menus, safe-area layouts and larger touch targets. Testing on a phone revealed controls that looked comfortable in the Editor but were too small in practice.</p></div></article>
+          </div>
+      </section>
+      <section class="engineering-band">
+          <div class="wrap project-section split">
+              <div><p class="eyebrow">Behind the game</p><h2>Familiar backend problems in a different setting.</h2></div>
+              <div class="section-copy"><p>My professional background is in C#, ASP.NET and SQL Server. Novari lets me apply that experience to problems such as keeping inventory and trade listings consistent.</p><p>For example, creating a listing needs to reserve the player’s inventory and save the listing together. I use a database transaction for those changes, with integration tests for cases such as an occupied depot slot and inventory changing during a request.</p><ul class="technology-list" aria-label="Backend technologies"><li>ASP.NET Core / .NET 8</li><li>Entity Framework Core</li><li>SQL Server</li><li>PlayFab authentication</li></ul></div>
+          </div>
+      </section>
+      <section class="project-section wrap split">
+          <div><p class="eyebrow">Next</p><h2>Still a work in progress.</h2></div>
+          <div class="section-copy"><p>I’m continuing to refine the game, test the Android builds and improve how the features fit together. This page will grow with the project as I add more screenshots and gameplay recordings.</p><p>If you’d like to discuss the project or my development experience, I’m happy to talk.</p><a class="project-button" href="mailto:HowardLam.Developer@gmail.com">Get in touch</a></div>
+      </section>
+  </main>
+  <footer class="project-footer wrap"><p>Howard Lam · Melbourne, Australia</p><a href="Index.html">Back to my portfolio</a></footer>
+</body>
+</html>
